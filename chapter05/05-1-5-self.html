@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // a부터 b까지 곱하는 함수 만들기
+        function multipleAll(a, b) {
+            let output = 1;
+            for (let i = a; i <= b; i++) {
+                output *= i;
+            }
+            return output;
+        }
+
+        console.log(`1부터 5까지의 곱: ${multipleAll(1, 5)}`);
+        // 1부터 5까지의 곱: 120
+        console.log(`5부터 10까지의 곱: ${multipleAll(5, 10)}`);
+        // 5부터 10까지의 곱: 151200
+    </script>
+</body>
+</html>

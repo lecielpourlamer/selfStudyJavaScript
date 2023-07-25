@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 익명 함수 선언하기
+        // 변수 생성
+        const 함수 = function() {
+            console.log("함수 내부의 코드입니다 ...1");
+            console.log("함수 내부의 코드입니다 ...2");
+            console.log("함수 내부의 코드입니다 ...3");
+            console.log("");
+        }
+
+        // 함수 호출
+        함수();
+        함수();
+
+        // 출력합니다.
+        console.log(typeof 함수);   // function
+        console.log(함수);
+
+        console.log(alert);         // ƒ alert() { [native code] }
+        console.log(prompt);        // ƒ prompt() { [native code] }
+        console.log(console.log);   // ƒ log() { [native code] }
+
+    </script>
+</body>
+</html>
