@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function earnings(wage, hours) {
+            wage = wage || 8590;
+            hours = hours || 52;
+
+            return wage * hours;
+        }
+
+        console.log(earnings());        // 446680
+        console.log(earnings(9000, 60));// 540000
+
+    </script>
+</body>
+</html>

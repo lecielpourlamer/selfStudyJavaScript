@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function earnings(wage, hours) {
+            wage = typeof(wage) != undefined ? wage : 8590;
+            hours = typeof(hours) != undefined ? hours : 52;
+            return wage * hours;
+        }
+
+        console.log(earnings(9000, 52));    // 468000
+        console.log(earnings(10000, 40));   // 400000
+        console.log(earnings());            // NaN
+
+    </script>
+</body>
+</html>
