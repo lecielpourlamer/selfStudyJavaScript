@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [0, 1, 2, 3, 4, 5];
+        const evenNumbers = numbers.filter(function(value) {
+            return value % 2 === 0;
+        });
+
+        console.log(`원래 배열: ${numbers}`);   //원래 배열: 0,1,2,3,4,5
+        console.log(`짝수만 추출: ${evenNumbers}`);//짝수만 추출: 0,2,4
+        console.log(typeof(numbers));   // Object
+        console.log(numbers instanceof Array);  // true
+        console.log(Object.prototype.toString.call(numbers));   // [object Array]
+        console.log(evenNumbers);
+    </script>
+</body>
+</html>

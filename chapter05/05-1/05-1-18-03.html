@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 매개변수롤 max(1, 2, 3, 4)와 같이
+        // 숫자를 배열로 받는 max() 함수 만들기
+        const max = function (...array) {
+            let output = array[0];
+            for (const data  of array) {
+                if (output < data) {
+                    output = data;
+                }
+            }
+            return output;
+        }
+        
+        console.log(max(1, 2, 3, 4));
+        console.log(typeof max(1, 2, 3, 4));
+    </script>
+</body>
+</html>
