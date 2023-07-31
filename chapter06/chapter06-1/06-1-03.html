@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 동적으로 객체 속성 제거하기
+        const student = {};
+        student.name = "Jackson";
+        student.hobby = "Training";
+        student.hope = "Athlete";
+        
+        console.log(JSON.stringify(student, null, 2));
+        // {
+        //     "name": "Jackson",
+        //     "hobby": "Training",
+        //     "hope": "Athlete"
+        // }
+        
+        // 객체의 속성을 제거
+        delete student.hope;
+        console.log(JSON.stringify(student, null, 2));
+        // {
+        //     "name": "Jackson",
+        //     "hobby": "Training",
+        // }
+    </script>
+</body>
+</html>
