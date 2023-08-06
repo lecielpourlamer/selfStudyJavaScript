@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 동적으로 객체 속성 추가하기
+        // 객체 선언
+        const student = {};
+        student.name = "John";
+        student.hobby = "Sleeping";
+        student.hope = "biologist";
+
+        // 출력
+        console.log(JSON.stringify(student));
+        // {"name":"John","hobby":"Sleeping","hope":"biologist"}
+
+        console.log(JSON.stringify(student, null, 2));
+        // {
+        //     "name": "John",
+        //     "hobby": "Sleeping",
+        //     "hope": "biologist"
+        // }
+
+    </script>
+</body>
+</html>
