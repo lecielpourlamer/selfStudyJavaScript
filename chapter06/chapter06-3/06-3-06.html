@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 전개 연산자로 배열 전개하고 자료 추가하기
+        // 사야 하는 물건 목록
+        const 물건_200301 = ['우유', '식빵'];
+        const 물건_200302 = ['고구마', ...물건_200301, '토마토'];
+
+        // 출력
+        console.log(물건_200301);   // (2) ['우유', '식빵']
+        console.log(물건_200302);   // (4) ['고구마', '우유', '식빵', '토마토']
+
+    </script>
+</body>
+</html>
