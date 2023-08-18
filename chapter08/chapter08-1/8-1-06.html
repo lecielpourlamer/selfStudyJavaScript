@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test() {
+            try {
+                console.log('A 위치입니다.');
+                throw "예외 강제 발생";
+            } catch (exception) {
+                console.log('B 위치입니다.');
+                return; // return 키워드로 test() 함수에서 빠져나감
+            } finally {
+                console.log('C 위치입니다.');   // 무조건 실행
+            }
+        }
+        // 함수 호출
+        test();
+    </script>
+</body>
+</html>

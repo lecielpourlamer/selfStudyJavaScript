@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    // 예외 강제로 발생시키기
+    function test(object) {
+        console.log(object.a + object.b);
+    }
+
+    test({});   // NaN 출력
+
+    /* object.a가 undefined, object.b가 undefined
+     * undefined + undefined = NaN
+     * 오류 없이 코드 정상 실행
+     * 자바스크립트에는 undefined와 NaN이라는 값이 있어,
+     * 예외를 많이 발생시키지 않는다. 
+    */
+</script>
+</html>
